@@ -1,0 +1,94 @@
+nav {
+  .navbar {
+    .bg-dark {
+      background: linear-gradient(152deg, #343a40 65%, #4f5963 100%) !important;
+    }
+  }
+}
+
+.mainBanner {
+  background: linear-gradient(134deg, #343a40 39%, #66737f 100%);
+  padding-bottom: 7.25rem;
+  color: rgba(255, 255, 255, 0.5);
+  .bannerCols {
+    display: flex;
+    flex-direction: row;
+    padding-left: 6.75rem;
+    padding-right: 1.75rem;
+    margin-left: auto;
+    margin-right: auto;
+    align-items: center;
+    flex-wrap: wrap;
+
+    .colLeft {
+      display: flex;
+      text-align: left;
+      justify-content: center;
+      align-items: flex-start;
+      flex-direction: column;
+      z-index: 2;
+      .bannerTitle {
+        font-size: 3rem;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+        line-height: 1.25;
+      }
+      .bannerContent {
+        font-size: 1.5rem;
+        margin-bottom: 2rem;
+      }
+      .learnMore {
+        padding: 1rem 2rem;
+        margin: 1.5rem auto;
+        border-top-left-radius: 1.45rem;
+        border-bottom-right-radius: 1.45rem;
+        background-color: #343a40;
+        color: white;
+      }
+    }
+
+    .colRight {
+      text-align: center;
+      padding-top: 1.5rem;
+      padding-bottom: 1.5rem;
+      .angularIcon {
+        width: 50%;
+        opacity: 0.5;
+      }
+    }
+  }
+}
+
+.waves {
+  position: relative;
+  margin-top: -13rem;
+  svg {
+    display: block;
+    position: absolute;
+  }
+}
+
+.container {
+  padding-top: 20rem;
+  color: #2d3748;
+  line-height: 1.25;
+  .row {
+    .reasonsTitle {
+      .line {
+        width: 100%;
+     hr {
+        background: linear-gradient(134deg, #343a40 0%, #66737f 100%);
+        opacity: 0.2;
+        height: 1px;
+        color: #fff;
+        width: 30%;
+
+      }
+    }
+      h3 {
+        font-size: 3rem;
+        font-weight: 700;
+      }
+    }
+  }
+}
