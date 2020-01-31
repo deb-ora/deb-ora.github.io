@@ -1,8 +1,19 @@
-nav {
-  .navbar {
-    .bg-dark {
-      background: linear-gradient(152deg, #343a40 65%, #4f5963 100%) !important;
-    }
+body {
+  background-color: #f1f2f3;
+}
+
+.navbar {
+  background: linear-gradient(152deg, #343a40 65%, #4f5963 100%) !important;
+  font-family: Helvetica;
+  font-size: 17px;
+  text-transform: uppercase;
+  font-weight: bold;
+  .navbar-nav {
+    justify-content: flex-end;
+    width: 100%;
+  }
+  .bg-dark {
+    background: linear-gradient(152deg, #343a40 65%, #4f5963 100%) !important;
   }
 }
 
@@ -37,6 +48,7 @@ nav {
         font-size: 1.5rem;
         margin-bottom: 2rem;
       }
+
       .learnMore {
         padding: 1rem 2rem;
         margin: 1.5rem auto;
@@ -76,19 +88,27 @@ nav {
     .reasonsTitle {
       .line {
         width: 100%;
-     hr {
-        background: linear-gradient(134deg, #343a40 0%, #66737f 100%);
-        opacity: 0.2;
-        height: 1px;
-        color: #fff;
-        width: 30%;
-
+        hr {
+          background: linear-gradient(134deg, #343a40 0%, #66737f 100%);
+          opacity: 0.55;
+          height: 1px;
+          color: #fff;
+          width: 30%;
+        }
       }
-    }
+      p{
+        color: #718096;
+        font-weight: 400;
+        font-size: 18px;
+        width: 900px;
+      }
       h3 {
         font-size: 3rem;
         font-weight: 700;
       }
+    }
+    .card-text{
+      color: #718096;
     }
   }
 }

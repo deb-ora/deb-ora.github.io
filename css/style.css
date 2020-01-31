@@ -1,5 +1,17 @@
-nav .navbar .bg-dark {
-  background: linear-gradient(152deg, #343a40 65%, #4f5963 100%) !important; }
+body {
+  background-color: #f1f2f3; }
+
+.navbar {
+  background: linear-gradient(152deg, #343a40 65%, #4f5963 100%) !important;
+  font-family: Helvetica;
+  font-size: 17px;
+  text-transform: uppercase;
+  font-weight: bold; }
+  .navbar .navbar-nav {
+    justify-content: flex-end;
+    width: 100%; }
+  .navbar .bg-dark {
+    background: linear-gradient(152deg, #343a40 65%, #4f5963 100%) !important; }
 
 .mainBanner {
   background: linear-gradient(134deg, #343a40 39%, #66737f 100%);
@@ -59,10 +71,17 @@ nav .navbar .bg-dark {
     width: 100%; }
     .container .row .reasonsTitle .line hr {
       background: linear-gradient(134deg, #343a40 0%, #66737f 100%);
-      opacity: 0.2;
+      opacity: 0.55;
       height: 1px;
       color: #fff;
       width: 30%; }
+  .container .row .reasonsTitle p {
+    color: #718096;
+    font-weight: 400;
+    font-size: 18px;
+    width: 900px; }
   .container .row .reasonsTitle h3 {
     font-size: 3rem;
     font-weight: 700; }
+  .container .row .card-text {
+    color: #718096; }
