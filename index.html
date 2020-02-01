@@ -16,7 +16,7 @@
   </head>
   <body>
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-      <a class="navbar-brand" href="#">
+      <a class="navbar-brand pl-4" data-toggle="collapse" href="#collapseInfo" aria-controls="collapseInfo" role="button" aria-expanded="false">
         <img
           src="https://gw.alipayobjects.com/zos/rmsportal/wSAkBuJFbdxsosKKpqyq.svg"
           width="30"
@@ -24,6 +24,14 @@
           alt="Greater than lesser than icon"
         />
       </a>
+      
+      <div class="collapse" id="collapseInfo">
+        <div class="card card-body">
+      <i>Layout Desenvolvido por Débora Perdona Lee <br>
+      deb-ora.github.io  <br>
+        deh.damiani@gmail.com </i>  <br>
+           </div>
+      </div>
       <button
         class="navbar-toggler"
         type="button"
@@ -39,56 +47,53 @@
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav mr-auto">
           <li class="nav-item">
-            <a class="nav-link" href="#">Home </a>
+            <a class="nav-link" href="https://blog.angular.io/" target="_blank">Site Oficial - Angular</a>
+
+           </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://angular.io/docs" target="_blank">Angular Docs</a>
+
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Link</a>
+            <a class="nav-link" href="https://angular.io/features" target="_blank">Angular Features</a>
+
           </li>
-          <li class="nav-item dropdown">
-            <a
-              class="nav-link dropdown-toggle"
-              href="#"
-              id="navbarDropdown"
-              role="button"
-              data-toggle="dropdown"
-              aria-haspopup="true"
-              aria-expanded="false"
-            >
-              Dropdown
-            </a>
-            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <a class="dropdown-item" href="#">Action</a>
-              <a class="dropdown-item" href="#">Another action</a>
-              <div class="dropdown-divider"></div>
-              <a class="dropdown-item" href="#">Something else here</a>
-            </div>
+          <li class="nav-item">
+            <a class="nav-link" href="https://www.protractortest.org/#/" target="_blank">Protector Test</a>
+
           </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://karma-runner.github.io/latest/index.html" target="_blank">Karma Runner</a>
+
+          </li>
+          
+
         </ul>
       </div>
     </nav>
 
     <div class="mainBanner container-fluid">
       <div class="bannerCols row">
-        <div class=" colLeft col-5">
+        <div class=" colLeft col-md-5">
           <h1 class=" bannerTitle">
             Porque escolher esta Framework?
           </h1>
           <p class="bannerContent ">
-            Sub-hero message, not too long and not too short. Make it just
-            right!
+            Confira os principais motivos para começar a usar Angular
           </p>
 
-          <button class="learnMore  shadow disabled">
-            Subscribe
+          <button href="#motivos" class="learnMore  shadow disabled">
+            Saiba mais
           </button>
         </div>
-        <div class="colRight col-7">
+        <div class="colRight col-md-7 d-none d-md-block">
           <img class="angularIcon" src="utils/angularIcon.png" />
         </div>
       </div>
+      
     </div>
 
-    <div class="waves">
+    <div class="waves d-none d-md-block">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
         <path
           fill="#343a40"
@@ -114,21 +119,33 @@
 
 <div class="container">
   <div class="row ">
-    <div class="reasonsTitle col-12 pb-4 text-center">
+    <div class="reasonsTitle col-md-12 pb-4 text-center col-sm-8">
       <h3 >Angular</h3>
       
       <div class="line mb-4">
       <hr class="mx-auto my-0">
       </div>
-      <p>Angular 4.3 é uma evolução do AngularJS.
-        É um framework complexo.
+      
+      <p class="text-center px-2">
+        Angular é um framework para desenvolver aplicações em diversas plataformas, mantido e desenvolvido pela Google.
         Seu propósito é ser um framework SPA (single page applications).
         Foi criado para gerenciar totalmente a página. Ele faz tudo, gerencia componentes, roteamento, requests e tudo mais.
         Suas aplicações são monolíticas.</p>
+
     </div>
   </div>
+
   <div class="row ">
-    <div class="col-6 mb-4">
+    <div class="col-md-4 mb-4">
+      <div class="card shadow text-center h-100">
+        <div class="card-body ">
+          <h5 class="card-title">Testes</h5>
+          <p class="card-text mx-4">
+           Use Karma para testes unitarios e cada vez que você salvar saiba se você estragou algo. E Protractor faz seus cenários testes rodar mais rápido e estavel. </p>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4 mb-4">
       <div class="card shadow text-center h-100">
         <div class="card-body ">
           <h5 class="card-title">Construção de Templates</h5>
@@ -138,55 +155,87 @@
         </div>
       </div>
     </div>
-    <div class="col-6 mb-4">
-      <div class="card shadow text-center h-100">
-        <div class="card-body">
-          <h5 class="card-title">Integração com Lógica</h5>
-          <p class="card-text mx-4">
-            Cada componente tem uma classe as quais as funções são visíveis aos templates. Basta criar uma função com a lógica desejada e utiliza-la.
-          </p>
-         
+      <div class="col-md-4 mb-4">
+        <div class="card shadow text-center h-100">
+          <div class="card-body">
+            <h5 class="card-title">Integração com Lógica</h5>
+            <p class="card-text mx-4">
+              Cada componente tem uma classe as quais as funções são visíveis aos templates. Basta criar uma função com a lógica desejada e utiliza-la.
+            </p>
+           
+          </div>
         </div>
       </div>
-    </div>
-    <div class="col-6 mb-4">
-      <div class="card shadow text-center h-100">
-        <div class="card-body">
-          <h5 class="card-title">Gerenciador de Formularios</h5>
-          <p class="card-text mx-4">Angular permite gerenciar formulários de 3 formas: NgForm, Reactive Forms e atribuindo variáveis aos inputs que é o jeito mais simples e fácil.</p>
+      <div class="col-md-4 mb-4">
+        <div class="card shadow text-center h-100">
+          <div class="card-body">
+            <h5 class="card-title">Gerenciador de Formularios</h5>
+            <p class="card-text mx-4">Angular permite gerenciar formulários de 3 formas: NgForm, Reactive Forms e atribuindo variáveis aos inputs que é o jeito mais simples e fácil.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 mb-4">
+        <div class="card shadow text-center h-100">
+          <div class="card-body">
+            <h5 class="card-title">Comunicação Cliente Servidor</h5>
+            <p class="card-text mx-4">    Angular 4.3 possui um componente chamado HttpClient que concentra a lógica de comunicação com servidor via HTTP e faz todo o trabalho sujo de gerenciar requisições e suas respostas, deixando o desenvolvedor bem tranquilo
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 mb-4">
+        <div class="card shadow text-center h-100">
+          <div class="card-body">
+            <h5 class="card-title">Componente Router</h5>
+            <p class="card-text mx-4"> Apps Angular carregam rápido com o novo Componente Router, que separa automaticamente e entrega ao usuário somente o código para renderizar o view requisitado.
+    
+            </p>
+          </div>
         </div>
       </div>
     </div>
 
-    <div class="col-6 mb-4">
-      <div class="card shadow text-center h-100">
-        <div class="card-body">
-          <h5 class="card-title">Gerenciador de Formularios</h5>
-          <p class="card-text mx-4">Angular permite gerenciar formulários de 3 formas: NgForm, Reactive Forms e atribuindo variáveis aos inputs que é o jeito mais simples e fácil.</p>
-        </div>
-      </div>
+  <div class="row motivos pt-4 mx-auto">
+    <div class="meanLogo col-md-5 ">
+      <img class="d-none d-sm-block w-100 " src="https://seolitehouse.com/wp-content/uploads/2019/02/main.png" alt="mean stack image">
     </div>
-    <div class="col-6 mb-4">
-      <div class="card shadow text-center h-100">
-        <div class="card-body">
-          <h5 class="card-title">Comunicação Cliente Servidor</h5>
-          <p class="card-text mx-4">    Angular 4.3 possui um componente chamado HttpClient que concentra a lógica de comunicação com servidor via HTTP e faz todo o trabalho sujo de gerenciar requisições e suas respostas, deixando o desenvolvedor bem tranquilo
-          </p>
+        
+      <div class="card col-md-7 m-auto p-0 " >
+        <div class="card-body mx-1">
+          <div class="text-center"> Angular pertence à stack MEAN, sigla que descreve às quatro tecnologias que cobrem os principais aspectos de desenvolvimento de produtos de software.
+          </div>
+          <hr class="line">
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item">M - MongoDB, NoSQL database</li>
+            <li class="list-group-item">E – Express, back-end middleware</li>
+            <li class="list-group-item">A – Angular, front-end framework</li>
+            <li class="list-group-item">N – Node.js, runtime environment.</li>
+    
         </div>
+        
+        </ul>
       </div>
-    </div>
-    <div class="col-6 mb-4">
-      <div class="card shadow text-center h-100">
-        <div class="card-body">
-          <h5 class="card-title">Tamanho de Load</h5>
-          <p class="card-text mx-4">     Os arquivos principais gerados pelo Angular são grandes (500KB) mas. Também deve se tomar cuidado para que a aplicação não fique gigante e carregada toda de uma vez (sintomas de SPA)
-
-          </p>
-        </div>
-      </div>
-    </div>
+    
+    
   </div>
 </div>
 
+
+
+<div class="footer">
+
+  <div class="footer-waves">
+    <svg xmlns="http://www.w3.org/2000/svg"
+    viewBox="0 0 1440 320">
+    <path fill=" #232629" fill-opacity="0.8" d="M0,96L48,128C96,160,192,224,288,250.7C384,277,480,267,576,245.3C672,224,768,192,864,197.3C960,203,1056,245,1152,229.3C1248,213,1344,139,1392,101.3L1440,64L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z">
+    
+    </path>
+    <path fill=" #232629" fill-opacity="0.4" d="M0,64L48,96C96,128,192,192,288,213.3C384,235,480,213,576,224C672,235,768,277,864,250.7C960,224,1056,128,1152,112C1248,96,1344,160,1392,192L1440,224L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path>
+    
+    </svg>
+  </div>
+
+
+</div>
   </body>
 </html>

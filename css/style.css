@@ -1,11 +1,14 @@
 body {
   background-color: #f1f2f3; }
 
+svg {
+  display: block;
+  position: absolute; }
+
 .navbar {
   background: linear-gradient(152deg, #343a40 65%, #4f5963 100%) !important;
   font-family: Helvetica;
-  font-size: 17px;
-  text-transform: uppercase;
+  font-size: 13px;
   font-weight: bold; }
   .navbar .navbar-nav {
     justify-content: flex-end;
@@ -59,9 +62,6 @@ body {
 .waves {
   position: relative;
   margin-top: -13rem; }
-  .waves svg {
-    display: block;
-    position: absolute; }
 
 .container {
   padding-top: 20rem;
@@ -79,9 +79,25 @@ body {
     color: #718096;
     font-weight: 400;
     font-size: 18px;
-    width: 900px; }
+    width: 900px;
+    margin: auto; }
   .container .row .reasonsTitle h3 {
     font-size: 3rem;
     font-weight: 700; }
   .container .row .card-text {
     color: #718096; }
+  .container .motivos .card {
+    border: none; }
+
+.footer {
+  z-index: 5; }
+  .footer .footer-waves {
+    position: relative; }
+  .footer ul {
+    list-style-type: none;
+    text-decoration: none;
+    color: #e3e6e8;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: flex-end; }

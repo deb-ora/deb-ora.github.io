@@ -1,12 +1,16 @@
 body {
   background-color: #f1f2f3;
 }
-
+svg {
+  display: block;
+  position: absolute;
+}
+//alterar posição brand direcionar para meus dados
 .navbar {
   background: linear-gradient(152deg, #343a40 65%, #4f5963 100%) !important;
   font-family: Helvetica;
-  font-size: 17px;
-  text-transform: uppercase;
+  font-size: 13px;
+  
   font-weight: bold;
   .navbar-nav {
     justify-content: flex-end;
@@ -74,10 +78,7 @@ body {
 .waves {
   position: relative;
   margin-top: -13rem;
-  svg {
-    display: block;
-    position: absolute;
-  }
+
 }
 
 .container {
@@ -101,6 +102,7 @@ body {
         font-weight: 400;
         font-size: 18px;
         width: 900px;
+        margin: auto;
       }
       h3 {
         font-size: 3rem;
@@ -111,4 +113,29 @@ body {
       color: #718096;
     }
   }
+  .motivos{
+
+    .card{
+      border: none;
+
+    }
+  }
+}
+
+.footer{
+  
+  z-index: 5;
+  .footer-waves{
+    position: relative;
+  }
+  ul{
+    list-style-type: none;
+    text-decoration: none;
+    color: #e3e6e8;
+    display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: flex-end;
+  }
+
 }
