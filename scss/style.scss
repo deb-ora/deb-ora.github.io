@@ -10,7 +10,7 @@ svg {
   background: linear-gradient(152deg, #343a40 65%, #4f5963 100%) !important;
   font-family: Helvetica;
   font-size: 13px;
-  
+
   font-weight: bold;
   .navbar-nav {
     justify-content: flex-end;
@@ -78,7 +78,6 @@ svg {
 .waves {
   position: relative;
   margin-top: -13rem;
-
 }
 
 .container {
@@ -97,7 +96,7 @@ svg {
           width: 30%;
         }
       }
-      p{
+      p {
         color: #718096;
         font-weight: 400;
         font-size: 18px;
@@ -109,33 +108,25 @@ svg {
         font-weight: 700;
       }
     }
-    .card-text{
+    .card-text {
       color: #718096;
     }
   }
-  .motivos{
-
-    .card{
+  .motivos {
+    .card {
       border: none;
-
     }
   }
 }
 
-.footer{
-  
-  z-index: 5;
-  .footer-waves{
-    position: relative;
-  }
-  ul{
+.footer {
+  ul {
+    font-size: 12px;
     list-style-type: none;
     text-decoration: none;
     color: #e3e6e8;
     display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
-  align-items: flex-end;
+    flex-direction: row;
+    justify-content: space-evenly;
   }
-
 }
